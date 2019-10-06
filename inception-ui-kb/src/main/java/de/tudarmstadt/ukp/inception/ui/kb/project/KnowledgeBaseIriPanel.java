@@ -145,10 +145,10 @@ public class KnowledgeBaseIriPanel
         List<String> choices = iris.stream().map(IRI::stringValue).collect(Collectors.toList());
 
         IModel<String> adapter = new LambdaModelAdapter<String>(
-            () -> { return model.getObject() != null ? model.getObject().stringValue() : null; },
-            str -> { 
+            () ->   model.getObject() != null ? model.getObject().stringValue() : null , //33
+            str ->  
                 model.setObject(str != null ? SimpleValueFactory.getInstance().createIRI(str) : 
-                    null); });
+                    null) ); //25
 
         ComboBox<String> comboBox = new ComboBox<>(id, adapter, choices);
         comboBox.add(LambdaBehavior.enabledWhen(() -> 

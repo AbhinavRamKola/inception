@@ -182,11 +182,11 @@ public class AccessSpecificSettingsPanel
 
     private TextField<String> defaultDataset(String aId, IModel<IRI> model)
     {
-        IModel<String> adapter = new LambdaModelAdapter<String>(() -> {
-            return model.getObject() != null ? model.getObject().stringValue() : null;
-        }, str -> {
-            model.setObject(str != null ? SimpleValueFactory.getInstance().createIRI(str) : null);
-        });
+        IModel<String> adapter = new LambdaModelAdapter<String>(() -> 
+             model.getObject() != null ? model.getObject().stringValue() : null   //34
+        , str -> 
+            model.setObject(str != null ? SimpleValueFactory.getInstance().createIRI(str) : null)
+        );  //28
         TextField<String> defaultDataset = new TextField<>(aId, adapter);
         defaultDataset.add(Validators.IRI_VALIDATOR);
         return defaultDataset;
