@@ -57,4 +57,12 @@ public class IndexSourceDocumentTask
         
         return getSourceDocument().getId() == aTask.getSourceDocument().getId();
     }
+    @Override
+    public boolean equals(Object obj) {
+    	return super.equals(obj);
+    }
+    @Override
+    public int hashCode() {
+       	return super.hashCode();
+    }
 }
