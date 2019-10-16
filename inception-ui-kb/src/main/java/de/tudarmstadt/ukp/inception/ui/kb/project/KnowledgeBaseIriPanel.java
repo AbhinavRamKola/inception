@@ -145,7 +145,7 @@ public class KnowledgeBaseIriPanel
         List<String> choices = iris.stream().map(IRI::stringValue).collect(Collectors.toList());
 
         IModel<String> adapter = new LambdaModelAdapter<String>(
-            () ->   model.getObject() != null ? model.getObject().stringValue() : null , //33
+            () ->   model.getObject() != null ? model.getObject().stringValue() : null , 
             str ->  
                 model.setObject(str != null ? SimpleValueFactory.getInstance().createIRI(str) : 
                     null) ); 
