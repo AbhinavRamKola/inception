@@ -148,7 +148,7 @@ public class KnowledgeBaseIriPanel
             () ->   model.getObject() != null ? model.getObject().stringValue() : null , //33
             str ->  
                 model.setObject(str != null ? SimpleValueFactory.getInstance().createIRI(str) : 
-                    null) ); //25
+                    null) ); 
 
         ComboBox<String> comboBox = new ComboBox<>(id, adapter, choices);
         comboBox.add(LambdaBehavior.enabledWhen(() -> 
