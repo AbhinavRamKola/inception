@@ -672,7 +672,7 @@ public class KnowledgeBaseServiceImpl
     {
         update(aKB, conn -> 
             getReificationStrategy(aKB).upsertStatement(conn, aKB, aStatement)
-        );  //20
+        );  
     }
 
     @Override
@@ -681,7 +681,7 @@ public class KnowledgeBaseServiceImpl
     {
         update(aKB, conn -> 
             getReificationStrategy(aKB).deleteStatement(conn, aKB, aStatement)
-        );   //21
+        );   
     }
 
     @Override
