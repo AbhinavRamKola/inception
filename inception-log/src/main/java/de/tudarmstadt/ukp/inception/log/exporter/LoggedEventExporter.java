@@ -95,7 +95,7 @@ public class LoggedEventExporter implements ProjectExporter
         Map<Long, String> documentNameIndex = new HashMap<>();
         documentService.listSourceDocuments(project).forEach(doc -> 
             documentNameIndex.put(doc.getId(), doc.getName())
-        );   //29
+        );   
         
         File eventLog = new File(aFile, EVENT_LOG);
         eventLog.createNewFile();
