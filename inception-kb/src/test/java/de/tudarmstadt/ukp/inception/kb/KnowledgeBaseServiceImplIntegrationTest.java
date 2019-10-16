@@ -1178,7 +1178,7 @@ public class KnowledgeBaseServiceImplIntegrationTest  {
 
         assertThatCode(() -> 
             sut.deleteStatement(kb, statement)
-        ).doesNotThrowAnyException();    //10
+        ).doesNotThrowAnyException();    
     }
 
     @Test
@@ -1529,7 +1529,7 @@ public class KnowledgeBaseServiceImplIntegrationTest  {
         assertThat(profiles)
             .allSatisfy((key, profile) -> 
                 assertThat(key).isNotNull()
-            ); //15
+            ); 
 
     }
 
