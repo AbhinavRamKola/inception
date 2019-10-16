@@ -280,7 +280,7 @@ public class QualifierFeatureEditor
 
         qualifierModel = new LambdaModelAdapter<>(() -> this.getSelectedKBItem(aItem), (v) -> 
             this.setSelectedKBItem((KBHandle) v, aItem, linkedAnnotationFeature)
-        ); //11
+        ); 
 
         AutoCompleteTextField<KBHandle> field = new AutoCompleteTextField<KBHandle>("value",
             qualifierModel, new TextRenderer<KBHandle>("uiLabel"), KBHandle.class)
