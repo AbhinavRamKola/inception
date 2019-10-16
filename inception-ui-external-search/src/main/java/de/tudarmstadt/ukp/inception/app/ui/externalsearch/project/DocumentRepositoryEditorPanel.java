@@ -88,12 +88,12 @@ public class DocumentRepositoryEditorPanel
         form.add(new TextField<String>("name")
                 .add(new LambdaAjaxFormSubmittingBehavior("change", t -> 
                     t.add(form)
-                )));  //16
+                )));  
 
         IModel<Pair<String, String>> typeModel = LambdaModelAdapter.of(() -> 
              listTypes().stream()
                     .filter(r -> r.getKey().equals(repositoryModel.getObject().getType()))
-                    .findFirst().orElse(null) //32
+                    .findFirst().orElse(null) 
         , (v) -> repositoryModel.getObject().setType(v.getKey()));
 
         typeChoice = new BootstrapSelect<Pair<String, String>>("type", typeModel, this::listTypes)
