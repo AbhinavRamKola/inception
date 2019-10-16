@@ -561,7 +561,7 @@ public class KnowledgeBaseServiceImpl
     {
         update(aKB, conn -> 
             getReificationStrategy(aKB).deleteProperty(conn, aKB, aType)
-        );  //18
+        );  
     }
 
     @Override
@@ -648,7 +648,7 @@ public class KnowledgeBaseServiceImpl
     {
         update(aKB, conn -> 
             getReificationStrategy(aKB).deleteInstance(conn, aKB, aInstance)
-        );   //19
+        );  
     }
 
     @Override
@@ -875,7 +875,7 @@ public class KnowledgeBaseServiceImpl
     {
         update(akb, (conn) -> 
             aProperty.write(conn, akb)
-        ); //14
+        );
     }
     
     @Override
@@ -883,7 +883,7 @@ public class KnowledgeBaseServiceImpl
     {
         update(aKB, conn -> 
             getReificationStrategy(aKB).upsertQualifier(conn, aKB, newQualifier)
-        );   //22
+        );   
     }
 
     @Override
@@ -891,7 +891,7 @@ public class KnowledgeBaseServiceImpl
     {
         update(aKB, conn -> 
             getReificationStrategy(aKB).deleteQualifier(conn, aKB, oldQualifier)
-        );  //23
+        );  
     }
 
     @Override
@@ -899,7 +899,7 @@ public class KnowledgeBaseServiceImpl
     {
         update(aKB, conn -> 
             getReificationStrategy(aKB).upsertQualifier(conn, aKB, aQualifier)
-        );   //24
+        );   
     }
 
     @Override
@@ -978,7 +978,7 @@ public class KnowledgeBaseServiceImpl
                     .withIdentifier(aIdentifier)
                     .retrieveLabel()
                     .asHandle(conn, true)
-            );    //31
+            );    
         }
     }
 
