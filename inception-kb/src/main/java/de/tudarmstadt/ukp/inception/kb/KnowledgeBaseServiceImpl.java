@@ -497,7 +497,7 @@ public class KnowledgeBaseServiceImpl
     {
         update(aKB, conn -> 
             getReificationStrategy(aKB).deleteConcept(conn, aKB, aConcept)
-        );  //17
+        );  
     }
 
     @Override
