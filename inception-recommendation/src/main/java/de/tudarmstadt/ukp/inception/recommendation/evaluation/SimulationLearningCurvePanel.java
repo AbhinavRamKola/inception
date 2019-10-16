@@ -139,7 +139,7 @@ public class SimulationLearningCurvePanel
         LambdaAjaxButton startButton = new LambdaAjaxButton(MID_SIMULATION_START_BUTTON,
             (_target, _form) -> 
                 startEvaluation(_target, _form )
-            );  //27
+            );  
         
         form.add(startButton);
     }
