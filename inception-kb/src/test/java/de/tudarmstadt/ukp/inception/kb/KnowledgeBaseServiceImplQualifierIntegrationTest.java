@@ -261,7 +261,7 @@ public class KnowledgeBaseServiceImplQualifierIntegrationTest {
         assertThatCode(() -> 
             sut.deleteQualifier(kb,
                     testFixtures.buildQualifier(statement, property, "Test qualifier"))
-        ).doesNotThrowAnyException();  //12
+        ).doesNotThrowAnyException();  
     }
 
     @Test
