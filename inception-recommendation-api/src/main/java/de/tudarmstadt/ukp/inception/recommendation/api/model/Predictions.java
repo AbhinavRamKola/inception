@@ -167,7 +167,7 @@ public class Predictions
                     prediction.getDocumentName(), aLayerId, prediction.getOffset(),
                     prediction.getRecommenderId(), prediction.getId(), -1), prediction)
 
-        ); //9
+        ); 
     }
 
     public Project getProject() {
