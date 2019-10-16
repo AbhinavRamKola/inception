@@ -182,7 +182,7 @@ public abstract class AbstractInfoPanel<T extends KBObject> extends Panel {
                     AbstractInfoPanel.this::confirmActionDelete).onConfigure((_this) -> 
                         _this.setVisible(kbObjectModel.getObject() != null
                                 && isNotEmpty(kbObjectModel.getObject().getIdentifier()))
-                    ); //8
+                    ); 
             deleteButton.add(new Label("label", new ResourceModel(getDeleteButtonResourceKey())));
             deleteButton.add(new WriteProtectionBehavior(kbModel));
             add(deleteButton);
@@ -193,7 +193,7 @@ public abstract class AbstractInfoPanel<T extends KBObject> extends Panel {
                         _this.setVisible(kbObjectModel.getObject() != null
                                 && isNotEmpty(kbObjectModel.getObject().getIdentifier())
                                 && kbObjectModel.getObject() instanceof KBConcept)
-                    ); //13
+                    ); 
             createSubclassButton.add(new Label("subclassLabel",
                     new ResourceModel(getCreateSubclassButtonResourceKey())));
             createSubclassButton.add(new WriteProtectionBehavior(kbModel));
