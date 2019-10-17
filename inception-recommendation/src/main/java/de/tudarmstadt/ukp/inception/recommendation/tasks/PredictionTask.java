@@ -68,13 +68,4 @@ public class PredictionTask
 
         recommendationService.putIncomingPredictions(user, project, predictions);
     }
-    
-    @Override
-    public boolean equals(Object o) {
-    	return super.equals(o);
-    }
-    @Override
-    public int hashCode() {
-    	return super.hashCode();
-    }
 }
