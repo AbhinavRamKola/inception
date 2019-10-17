@@ -273,14 +273,5 @@ public class TrainingTask
             cas = aCas;
             state = aState;
         }
-        
-        @Override
-        public boolean equals(Object obj) {
-        	return super.equals(obj);
-        }
-        @Override
-        public int hashCode() {
-        	return super.hashCode();
-        }
     }
 }
